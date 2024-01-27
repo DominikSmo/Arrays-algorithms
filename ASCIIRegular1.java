@@ -58,7 +58,9 @@ public class ASCIIRegular1 {
             signs[27-i] = (char) tab[27-i];
             signs[28+i] = (char) tab[28+i];
 
-            System.out.print(tab2[6-i] + "," + " ");
+            System.out.print(tab2[6-i] + "," + " ");                //after running the program you can see in this "s-out" that the last four indices of an array 'tab2' were filled starting from the last index and the fourth index was duplicated. But obviously there is one value in the fourth index.
+                                                                    // It is because the filling of the shorter array starts from a number of an index with value zero. So code from line 36 fills 'tab2' from 6-i=6, because the first value of i is 0. Therefore code from line 36 fills 'tab2' from the sixth index of this array.
+                                                                    // Needless to say that it concerns all the arrays in this program besides 'tab4' which was filled by a condition in a loop.
 
             //What's interesting: we can fill each array starting from the last index. It won't change how the program works.
         }
