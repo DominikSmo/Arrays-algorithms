@@ -62,7 +62,17 @@ public class ASCIIRegular1 {
                                                                     // It is because the filling of the shorter array starts from a number of an index with value zero. So code from line 36 fills 'tab2' from 6-i=6, because the first value of i is 0. Therefore code from line 36 fills 'tab2' from the sixth index of this array.
                                                                     // Needless to say that it concerns all the arrays in this program besides 'tab4' which was filled by a condition in a loop.
 
-            //What's interesting: we can fill each array starting from the last index. It won't change how the program works.
+            //What's interesting: we can fill each array starting from the last index. It won't change how the program works. For example:
+
+//            signs[28+i] = (char) tab[28+i];
+//            signs[27-i] = (char) tab[27-i];
+//            signs[25-i] = (char) tab[25-i];
+//            signs[21-i] = (char) tab[21-i];
+//            signs[18-i] = (char) tab[18-i];
+//            signs[14-i] = (char) tab[14-i];
+//            signs[11-i] = (char) tab[11-i];
+//            signs[7-i] = (char) tab[7-i];
+//            signs[3-i] = (char) tab[3-i];
         }
         System.out.println();
         System.out.println("exercise: ");
